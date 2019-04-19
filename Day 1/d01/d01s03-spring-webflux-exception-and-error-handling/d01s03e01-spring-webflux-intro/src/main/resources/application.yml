@@ -1,0 +1,17 @@
+# logging settings
+logging:
+  level:
+    root: info
+    org:
+      apache: warn
+      springframework: warn
+    reactor: error
+
+  pattern:
+    console: '%clr([%date{HH:mm:ss}]){faint} %clr(%2p) %clr(%-30.30logger{36}){cyan} %m%n%wex'
+
+spring:
+  jackson:
+    serialization:
+      indent_output: true
+    default-property-inclusion: non_null
