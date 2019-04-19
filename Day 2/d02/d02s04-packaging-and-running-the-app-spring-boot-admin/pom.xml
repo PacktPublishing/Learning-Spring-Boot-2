@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>com.packt</groupId>
+        <artifactId>d02</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>d02s04-packaging-and-running-the-app-spring-boot-admin</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <modules>
+        <module>d02s04e01-spring-boot-maven-plugin</module>
+        <module>d02s04e02-packaging-and-running-the-app</module>
+        <module>d02s04e03-spring-boot-admin</module>
+    </modules>
+</project>

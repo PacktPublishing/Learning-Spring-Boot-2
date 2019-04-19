@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: monitored-application
+
+  boot:
+    admin:
+      client:
+        url: 'http://localhost:8888'
+
+  jmx:
+    enabled: false
+
+  jpa:
+    open-in-view: false
+
+# logging settings
+logging:
+  level:
+    root: info
+    com:
+      zaxxer: warn
+    de:
+      codecentric: warn
+    org:
+      apache: warn
+      hibernate: warn
+      springframework: warn
+
+  pattern:
+    console: '%clr([%date{HH:mm:ss.SSS}]){faint} %clr(%2p) %clr(%-30.30logger{36}){cyan} %m%n%wex'
+
+# Actuator config
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: '*'
+
+  endpoint:
+    health:
+      show-details: ALWAYS
+      enabled: true
+
+    info:
+      enabled: true
+
+  info:
+    git:
+      mode: full

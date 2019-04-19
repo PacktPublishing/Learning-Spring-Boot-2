@@ -1,0 +1,36 @@
+### get the app beans
+GET {{host}}:{{port}}//{{actuatorURI}}/beans
+
+### get the environment info
+GET {{host}}:{{port}}//{{actuatorURI}}/env
+
+### get the app health
+GET {{host}}:{{port}}//{{actuatorURI}}/health
+
+### get the app info
+GET {{host}}:{{port}}//{{actuatorURI}}/info
+
+### get the app metrics
+GET {{host}}:{{port}}//{{actuatorURI}}/metrics
+
+### get the app threaddump
+GET {{host}}:{{port}}//{{actuatorURI}}/threaddump
+
+### ------------------------------------------------
+
+### send a GET request on the custom endpoint
+GET {{host}}:{{port}}//{{actuatorURI}}/custom
+
+### send a POST request on the custom endpoint
+POST {{host}}:{{port}}//{{actuatorURI}}/custom
+Content-Type: application/json
+
+{
+  "name": "important.property",
+  "value": "a very important value"
+}
+
+### ------------------------------------------------
+
+### gracefully shutdown the server
+POST {{host}}:{{port}}//{{actuatorURI}}/shutdown

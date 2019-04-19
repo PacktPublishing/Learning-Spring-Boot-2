@@ -1,0 +1,27 @@
+server:
+  http2:
+    enabled: true
+  port: 8888
+
+spring:
+  application:
+    name: spring-spring-boot-admin
+
+  jmx:
+    enabled: false
+
+  thymeleaf:
+    check-template-location: false
+
+# logging settings
+logging:
+  level:
+    root: info
+    de:
+      codecentric: warn
+    org:
+      apache: warn
+      springframework: warn
+
+  pattern:
+    console: '%clr([%date{HH:mm:ss.SSS}]){faint} %clr(%2p) %clr(%-30.30logger{36}){cyan} %m%n%wex'
