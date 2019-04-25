@@ -7,8 +7,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.annotation.PostConstruct;
-
 @Service
 public class ProductService {
 
@@ -17,11 +15,6 @@ public class ProductService {
     @Autowired
     public ProductService(final ProductRepository productRepository) {
         this.productRepository = productRepository;
-    }
-
-    @PostConstruct
-    public void init() {
-        create(new Product("A nice and useful tablet", 250d));
     }
 
     @Transactional(readOnly = false, propagation = Propagation.REQUIRED)

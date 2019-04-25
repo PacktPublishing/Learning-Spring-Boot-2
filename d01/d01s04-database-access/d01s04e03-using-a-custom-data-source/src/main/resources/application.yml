@@ -28,7 +28,7 @@ spring:
     hibernate:
       # be VERY careful with it's usage
       # DO NOT use it for 'prod' | 'staging' environments
-      ddl-auto: create-drop
+      ddl-auto: create
 
     open-in-view: false
     properties:
