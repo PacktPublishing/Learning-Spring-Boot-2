@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * A simple Spring Boot application to demo the usage of a YAML properties file
+ * A simple Spring Boot application to demo the usage of a YAML file
  *
  * @author bogdan.solga
  */
