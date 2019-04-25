@@ -1,4 +1,4 @@
-package com.packt.learning.spring.boot.d02s02;
+package com.packt.learning.spring.boot.d01s02;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
