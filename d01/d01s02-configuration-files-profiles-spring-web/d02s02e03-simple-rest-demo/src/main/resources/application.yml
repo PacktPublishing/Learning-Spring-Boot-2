@@ -1,0 +1,7 @@
+# logging settings
+logging:
+  level:
+    root: info
+    org: warn
+  pattern:
+    console: '%clr([%date{HH:mm:ss.SSS}]){faint} %clr(%2p) %clr(%-40.40logger{36}){cyan} %m%n%wex'
