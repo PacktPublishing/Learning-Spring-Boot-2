@@ -1,4 +1,4 @@
-package com.packt.learning.spring.boot;
+package com.packt.learning.spring.boot.d01s03;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
