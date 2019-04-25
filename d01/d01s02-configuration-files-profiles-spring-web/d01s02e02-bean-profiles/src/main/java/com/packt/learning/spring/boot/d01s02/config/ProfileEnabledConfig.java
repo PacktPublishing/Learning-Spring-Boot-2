@@ -1,4 +1,4 @@
-package com.packt.learning.spring.boot.d02s02.config;
+package com.packt.learning.spring.boot.d01s02.config;
 
 import com.packt.learning.spring.boot.d02s02.RunProfiles;
 import org.springframework.context.annotation.Bean;

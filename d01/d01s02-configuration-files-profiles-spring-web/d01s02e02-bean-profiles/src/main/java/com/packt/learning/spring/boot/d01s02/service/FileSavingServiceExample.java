@@ -1,4 +1,4 @@
-package com.packt.learning.spring.boot.d02s02.service;
+package com.packt.learning.spring.boot.d01s02.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

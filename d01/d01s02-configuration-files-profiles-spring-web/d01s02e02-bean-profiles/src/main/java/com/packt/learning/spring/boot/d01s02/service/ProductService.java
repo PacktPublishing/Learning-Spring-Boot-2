@@ -1,7 +1,7 @@
-package com.packt.learning.spring.boot.d02s02.service;
+package com.packt.learning.spring.boot.d01s02.service;
 
 import com.packt.learning.spring.boot.d02s02.RunProfiles;
-import com.packt.learning.spring.boot.d02s02.repository.ProductRepository;
+import com.packt.learning.spring.boot.d01s02.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.core.env.Profiles;

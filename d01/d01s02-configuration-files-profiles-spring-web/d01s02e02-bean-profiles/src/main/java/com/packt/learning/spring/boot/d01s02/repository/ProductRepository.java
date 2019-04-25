@@ -1,4 +1,4 @@
-package com.packt.learning.spring.boot.d02s02.repository;
+package com.packt.learning.spring.boot.d01s02.repository;
 
 
 import com.packt.learning.spring.boot.domain.bootstrap.ProductsSetup;

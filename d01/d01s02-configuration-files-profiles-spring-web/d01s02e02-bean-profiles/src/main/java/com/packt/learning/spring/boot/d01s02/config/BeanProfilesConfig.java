@@ -1,11 +1,11 @@
-package com.packt.learning.spring.boot.d02s02.config;
+package com.packt.learning.spring.boot.d01s02.config;
 
-import com.packt.learning.spring.boot.d02s02.service.DevFileSavingService;
-import com.packt.learning.spring.boot.d02s02.service.FileSavingServiceExample;
-import com.packt.learning.spring.boot.d02s02.service.ProdFileSavingService;
-import com.packt.learning.spring.boot.d02s02.service.ProductService;
+import com.packt.learning.spring.boot.d01s02.service.DevFileSavingService;
+import com.packt.learning.spring.boot.d01s02.service.FileSavingServiceExample;
+import com.packt.learning.spring.boot.d01s02.service.ProdFileSavingService;
+import com.packt.learning.spring.boot.d01s02.service.ProductService;
 import com.packt.learning.spring.boot.d02s02.RunProfiles;
-import com.packt.learning.spring.boot.d02s02.repository.ProductRepository;
+import com.packt.learning.spring.boot.d01s02.repository.ProductRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;

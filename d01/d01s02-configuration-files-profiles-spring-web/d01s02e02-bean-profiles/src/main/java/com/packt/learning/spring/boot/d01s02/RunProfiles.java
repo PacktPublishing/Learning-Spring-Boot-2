@@ -1,4 +1,4 @@
-package com.packt.learning.spring.boot.d02s02;
+package com.packt.learning.spring.boot.d01s02;
 
 /**
  * The currently defined Spring {@link org.springframework.context.annotation.Profile}s
