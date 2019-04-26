@@ -28,7 +28,7 @@ import java.util.Optional;
 )
 public class ProductController {
 
-    private final ProductService productService; // database? web service? eMag? file?
+    private final ProductService productService;
 
     @Autowired
     public ProductController(final ProductService productService) {
