@@ -1,6 +1,6 @@
 package com.packt.learning.spring.boot.d01s02.service;
 
-import com.packt.learning.spring.boot.d02s02.RunProfiles;
+import com.packt.learning.spring.boot.d01s02.RunProfiles;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
