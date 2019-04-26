@@ -1,7 +1,11 @@
 server:
   port: 8888
 custom:
-  property: 'a custom property'
+  property: 'another custom property'
+
+spring:
+  application:
+    name: using-yaml-files
 
 # logging settings
 logging:

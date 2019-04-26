@@ -10,6 +10,6 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>d01s02e01-using-a-yaml-file</artifactId>
+    <artifactId>d01s02e02-using-a-yaml-file</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 </project>
