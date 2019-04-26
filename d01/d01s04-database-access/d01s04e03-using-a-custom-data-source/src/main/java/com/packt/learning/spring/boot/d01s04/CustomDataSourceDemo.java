@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  * @author bogdan.solga
  */
-@SpringBootApplication//(exclude = DataSourceAutoConfiguration.class)
+@SpringBootApplication
 public class CustomDataSourceDemo {
 
     public static void main(String[] args) {
