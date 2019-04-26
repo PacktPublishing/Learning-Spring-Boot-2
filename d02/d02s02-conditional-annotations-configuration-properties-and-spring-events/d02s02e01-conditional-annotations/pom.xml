@@ -10,7 +10,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>d02s02-conditional-annotations</artifactId>
+    <artifactId>d02s02e01-conditional-annotations</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <dependencies>
