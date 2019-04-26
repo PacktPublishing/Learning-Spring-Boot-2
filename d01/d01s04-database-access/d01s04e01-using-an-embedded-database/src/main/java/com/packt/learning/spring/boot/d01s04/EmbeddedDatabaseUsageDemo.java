@@ -1,6 +1,6 @@
 package com.packt.learning.spring.boot.d01s04;
 
-import com.packt.learning.spring.boot.jpa.model.Product;
+import com.packt.learning.spring.boot.d01s04.dto.ProductDTO;
 import com.packt.learning.spring.boot.d01s04.service.ProductService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -32,7 +32,8 @@ public class EmbeddedDatabaseUsageDemo {
     ApplicationRunner applicationRunner(final ProductService productService) {
         return args -> {
             IntStream.range(0, 50)
-                     .forEach(id -> productService.create(new Product("The product #" + id, RANDOM.nextDouble() * 100)));
+                     .forEach(id -> productService.create(new ProductDTO(id, "The product #" + id,
+                             RANDOM.nextDouble() * 100)));
             LOGGER.info("The default products were successfully created!");
         };
     }

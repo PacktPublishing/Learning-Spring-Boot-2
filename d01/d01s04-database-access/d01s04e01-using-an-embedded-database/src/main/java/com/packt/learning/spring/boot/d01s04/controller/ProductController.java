@@ -1,9 +1,8 @@
 package com.packt.learning.spring.boot.d01s04.controller;
 
+import com.packt.learning.spring.boot.d01s04.dto.ProductDTO;
 import com.packt.learning.spring.boot.d01s04.service.ProductService;
-import com.packt.learning.spring.boot.jpa.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -15,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Optional;
+import java.util.List;
 
 /**
  * A Spring {@link RestController} used to showcase the modeling of a REST controller for CRUD operations
@@ -36,36 +35,24 @@ public class ProductController {
     }
 
     @PostMapping
-    public ResponseEntity<?> create(@RequestBody Product product) {
-        productService.create(product);
+    public ResponseEntity<?> create(@RequestBody ProductDTO productDTO) {
+        productService.create(productDTO);
         return ResponseEntity.ok(HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
-    public Product getProduct(@PathVariable final int id) {
-        return productService.get(id);
+    public ResponseEntity<ProductDTO> getProduct(@PathVariable final int id) {
+        return new ResponseEntity<>(productService.get(id), HttpStatus.I_AM_A_TEAPOT);
     }
 
     @GetMapping
-    public Iterable<Product> getAll() {
+    public List<ProductDTO> getAll() {
         return productService.getAll();
     }
 
-    @GetMapping(
-            path = {
-                    "/{pageNumber}/{resultsNumber}/{sortMode}",
-                    "/{pageNumber}/{resultsNumber}"
-            }
-    )
-    public Page<Product> getPage(@PathVariable final int pageNumber,
-                                 @PathVariable final int resultsNumber,
-                                 @PathVariable final Optional<String> sortMode) {
-        return productService.getPage(pageNumber, resultsNumber, sortMode.orElse("asc"));
-    }
-
     @PutMapping("/{id}")
-    public ResponseEntity<?> update(@PathVariable final int id, @RequestBody Product product) {
-        productService.update(id, product);
+    public ResponseEntity<?> update(@PathVariable final int id, @RequestBody ProductDTO productDTO) {
+        productService.update(id, productDTO);
         return ResponseEntity.ok(HttpStatus.OK);
     }
 

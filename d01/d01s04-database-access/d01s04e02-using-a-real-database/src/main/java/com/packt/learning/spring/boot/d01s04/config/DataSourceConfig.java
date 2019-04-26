@@ -1,5 +1,6 @@
 package com.packt.learning.spring.boot.d01s04.config;
 
+import com.packt.learning.spring.boot.d01s04.dto.ProductDTO;
 import com.packt.learning.spring.boot.jpa.model.Product;
 import com.packt.learning.spring.boot.d01s04.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,8 +38,8 @@ public class DataSourceConfig {
     @PostConstruct
     public void init() {
         IntStream.range(0, 10)
-                 .forEach(value ->
-                     productService.create(new Product("The product with the ID " + RANDOM.nextInt(100),
+                 .forEach(id ->
+                     productService.create(new ProductDTO(id , "The product with the ID " + RANDOM.nextInt(100),
                              RANDOM.nextDouble() * 200))
                  );
     }
